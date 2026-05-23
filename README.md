@@ -10,10 +10,10 @@ import tureng
 
 trng = tureng.Tureng()
 
-for chracter in '0123456789abcçdefgğhıijklmnoöpqrsştuüvwxyz':
-   print(chracter)
-   with open(f'tureng/{chracter}.json', 'w') as fp:
-       json.dump(trng.find_all_words_starting_with(chracter), fp)
+for character in '0123456789abcçdefgğhıijklmnoöpqrsştuüvwxyz':
+   print(character)
+   with open(f'tureng/{character}.json', 'w') as fp:
+       json.dump(trng.find_all_words_starting_with(character), fp)
 ```
 
 Her harf için bulunan bütün kelimeler tek bir json dosyasına konulur. 5/17/2026 tarihinde benim tarafımdan oluşturulan bu kelime listesine [tureng_words.json](https://github.com/helallao/tureng/releases) dosyasından ulaşabilirsiniz.
